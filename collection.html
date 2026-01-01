@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Restaurn</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+             <p class="navbar-link"><a href="collection.html">Collections</a></p>
+               <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>-
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <p  class="fa-solid fa-bars"><i class="fa-light fa-align-justify"></i></p>
+        </div>
+    </div>
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()"><i class="fa-solid fa-xmark "></i></p>
+         <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+              <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+               <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+   <!--Product-->
+   <div class="product-section">
+     <form class="product-search">
+        <input type="text" placeholder="Search" id="search">
+        <i  style="align-items: end" class="fa-solid fa-magnifying-glass"></i>
+     </form>
+
+      
+        
+      <div class="products" id="products">
+       <div class="products-box">
+         <img src="https://www.bing.com/th/id/OIP.Sn13eSBJrjZTfByoKt4gdgHaMS?w=160&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="">
+         <p> White Wedding Gown</p>
+       </div>
+
+       <div class="products-box">
+         <img src="https://www.bing.com/th/id/OIP.drGIhTUPEJy5JoL72peU-wHaLH?w=160&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="">
+         <p>Premimum red dress</p>
+       </div>
+
+        
+       <div class="products-box">
+            <img src="https://www.bing.com/th/id/OIP.xcylH1UCbCI5yBV2VlwETgHaJb?w=182&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt="">
+            <p>Crop Top black&white</p>
+        </div>
+
+
+        <div class="products-box">
+          <img src="https://th.bing.com/th/id/OIP.UIA22ZY6CrhRgCHcRu_PgQHaLG?w=195&h=292&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="">
+          <p>lengha choli</p>
+        </div>
+
+
+        <div class="products-box">
+            <img src="https://th.bing.com/th/id/OIP.cPuquz0_8KPttiJVY9QpMQHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="">
+            <p>Premium Kurtha set</p>
+        </div>
+
+        <div class="products-box">
+
+            <img src="https://th.bing.com/th/id/OIP.rqike1INimDrMJ7SkyWhLAHaJP?w=155&h=194&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="">
+            <p>Party wear</p>
+        </div>
+
+
+
+           
+        <div class="products-box">
+            <img src="https://th.bing.com/th/id/OIP.LHP4rT28QDQ2BE5AmwUg5gHaJ4?w=195&h=260&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="">
+            <p>Western dress</p>
+        </div>
+
+        <div class="products-box">
+            <img src="data:image/webp;base64,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" alt="">
+            <p>Stylish lehenga</p>
+        </div>
+
+       </div>
+    </div>
+
+
+
+   
+ 
+
+    <!--FOOTER-->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footerbox-1">
+                <h2 class="heading-text">Nastra</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolores facere facilis nulla quam a consequatur ab ipsa, cum voluptatibus accusantium sed quia quas delectus hic eaque minus iure aliquid.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffff;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #ffff;"></i>
+
+                </div>
+            </div>
+        </div>
+        <p>@ 2025 Nastra.com</p>
+    </div>
+    
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
